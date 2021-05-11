@@ -16,8 +16,8 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
         http
           .authorizeRequests()
           // Whitelist some pages to everyone in those pages isn't necessary to log in
-          //.antMatchers("/", "index", "/css/*", "/js/*")
-          //.permitAll()
+          .antMatchers("/", "index", "/css/*", "/js/*")
+          .permitAll()
           .anyRequest()
           .authenticated()
           .and()

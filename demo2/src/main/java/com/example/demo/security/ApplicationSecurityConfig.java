@@ -42,7 +42,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     protected UserDetailsService userDetailsService() {
         UserDetails aUribeUser = User.builder()
           .username("alejo00")
-          //.password(passwordEncoder.encode("password"))
+          .password(passwordEncoder.encode("password"))
           .password("password")
           .roles("STUDENT")    // ROLE_STUDENT
           .build();
