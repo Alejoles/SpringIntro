@@ -28,13 +28,11 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!--
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
-		-->
 
 		<!-- All the dependencies below are used to use correctly OAuth2 -->
 
@@ -56,6 +54,12 @@
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>js-cookie</artifactId>
+			<version>2.1.0</version>
 		</dependency>
 
 	</dependencies>
